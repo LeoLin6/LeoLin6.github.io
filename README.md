@@ -1,16 +1,10 @@
 # Leo Lin — personal website
 
-Simple personal site in the same format as [advaitpatel.com](https://advaitpatel.com/).
+Simple personal site in the same format as [advaitpatel.com](https://advaitpatel.com/). 
 
 ## Local preview
 
-Open `index.html` in a browser, or from this folder:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit http://localhost:8000
+Open `index.html` in a browser
 
 ## Publish on GitHub Pages
 
