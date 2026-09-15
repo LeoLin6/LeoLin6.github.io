@@ -95,7 +95,8 @@
             width: 200px;
         }
 
-        .pub-media video {
+        .pub-media video,
+        .pub-media img {
             display: block;
             width: 100%;
             height: auto;
@@ -241,13 +242,13 @@
         
         <h2>About me</h2>
         
-        <p class="last-updated">Last updated: August 2026</p>
+        <p class="last-updated">Last updated: September 2026</p>
         
         <p>I am a Computer Engineering student at the University of Illinois (UIUC). My interests include robot learning, computer vision, dexterous manipulation, and software engineering. <strong>My goal is to build robots that can work reliably in the messy real world.</strong> I'm currently doing robotics research under <a href="https://slazebni.cs.illinois.edu/">Lana Lazebnik</a> and <a href="https://shivanshpatel35.github.io/">Shivansh Patel</a>. I just wrapped up a robotics software engineer co-op at Amazon Robotics (Innovation Lab) under <a href="https://coe.northeastern.edu/people/padir-taskin/">Prof. Taskin Padir</a>.</p>
         
         <p>Last summer, I interned at <a href="https://github.com/kscalelabs">K-Scale Labs</a>, training humanoid robots for manipulation with VLMs and action diffusion models, and writing infrastructure for data collection. I've also done research on robot arms, teleoperation, and computer vision through NSF REU and labs at UIUC.</p>
         
-        <p>At UIUC, I was a co-chair for <a href="https://sigrobotics.acm.illinois.edu">SIGRobotics</a>, a special interest group under <a href="https://acm.illinois.edu">ACM@UIUC</a>, where I led the embodied AI hackathon team and humanoid project team. I'm a 3x robot hackathon winner, including 1st place locally at the LeRobot global hackathon and a <a href="https://devpost.com/software/japanese-folding-technique-dual-arm-robot">dual-arm ninja shirt folding robot</a> at Robot Hackathon NYC.</p>
+        <p>At UIUC, I was a co-chair for <a href="https://sigrobotics.acm.illinois.edu">SIGRobotics</a>, a special interest group under <a href="https://acm.illinois.edu">ACM@UIUC</a>, where I led the embodied AI hackathon team and humanoid project team. I'm a 3x robot hackathon winner, including 1st place locally at the <a href="https://huggingface.co/LeRobot-worldwide-hackathon">LeRobot Global Hackathon</a> and a <a href="https://devpost.com/software/japanese-folding-technique-dual-arm-robot">dual-arm ninja shirt folding robot</a> at Robot Hackathon NYC.</p>
         
         <p>I'm graduating in December 2026 and looking for full-time roles in robotics. Feel free to contact me via email (leolinw07 at gmail dot com) or through any of the following links: <a href="https://www.linkedin.com/in/leolin6">LinkedIn</a>, <a href="https://github.com/LeoLin6">GitHub</a>, <a href="./resume.pdf">Resume</a>.</p>
         
@@ -285,12 +286,40 @@
             </div>
         </div>
 
+        <div class="pub">
+            <div class="pub-row">
+                <div class="pub-media">
+                    <img src="./polyfusion.png" alt="PolyFusion collision-free trajectory optimization on a robot arm">
+                </div>
+                <div class="pub-body">
+                    <p class="pub-title"><span class="pub-new">[NEW]</span><strong>PolyFusion: Collision-Free Robot Learning using Bernstein Polynomials</strong></p>
+                    <p class="pub-authors">Amisha Bhaskar, Gage MacLin, Camilla Tabasso, <strong>Leo Lin</strong>, Pratap Tokekar, Venanzio Cichella, Joshua Migdal, Tye Brady, Taskin Padir</p>
+                    <p class="pub-venue">CoRL 2026</p>
+                    <p class="pub-links">
+                        <a href="#polyfusion-bibtex" onclick="event.preventDefault(); var d=document.getElementById('polyfusion-bibtex'); d.open=!d.open;">bibtex</a>
+                    </p>
+                    <details id="polyfusion-bibtex">
+                        <summary></summary>
+                        <pre>@inproceedings{bhaskar2026polyfusion,
+  title={PolyFusion: Collision-Free Robot Learning using Bernstein Polynomials},
+  author={Amisha Bhaskar and Gage MacLin and Camilla Tabasso and Leo Lin and Pratap Tokekar and Venanzio Cichella and Joshua Migdal and Tye Brady and Taskin Padir},
+  booktitle={Conference on Robot Learning (CoRL)},
+  year={2026}
+}</pre>
+                    </details>
+                </div>
+            </div>
+        </div>
+
         <h2>Past work</h2>
 
         <div class="exp">
             <p class="exp-meta">Jan 2026 – Jun 2026 · Westborough, MA</p>
             <p class="exp-title"><strong>Amazon Robotics</strong> — Software Development Engineer Co-op, Innovation Lab</p>
-            <p class="exp-body">Mapped SAM2-segmented textures and FoundationPose poses onto 3D primitives in Isaac Sim using Python and ROS2. Trained an Interactive World Simulator against NVIDIA's Cosmos world model to teleoperate a dreamed robot under high latency, and integrated Sharpa hands into Isaac Sim with Apple Vision Pro, Manus gloves, ROS2, and IsaacTeleop.</p>
+            <p class="exp-body">Mapped SAM2-segmented textures and FoundationPose poses onto 3D primitives in Isaac Sim using Python and ROS2. Trained Interactive World Simulator vs. NVIDIA Cosmos (1K episodes) to teleop a dreamed robot under latency. Integrated Sharpa hands into Isaac Sim with Apple Vision Pro, Manus gloves, ROS2, and IsaacTeleop.</p>
+            <div class="exp-media">
+                <img src="./media/amazon/amazon-robotics.jpg" alt="Leo Lin at Amazon during the Robotics Innovation Lab co-op">
+            </div>
         </div>
 
         <div class="exp">
@@ -304,7 +333,7 @@
 
         <div class="exp">
             <p class="exp-meta">Jun 2025 · SF Bay Area · 1st place local</p>
-            <p class="exp-title"><strong><a href="https://huggingface.co/lerobot">LeRobot</a> Global Hackathon</strong> — Sock-sorting robot</p>
+            <p class="exp-title"><strong><a href="https://huggingface.co/LeRobot-worldwide-hackathon">LeRobot Global Hackathon</a></strong> — Sock-sorting robot</p>
             <p class="exp-body">Built a sock-sorting robot that won 1st place locally: Gemini for high-level planning, a teleop data-collection pipeline with bounding-box annotations, and VLA + ACT models trained with LeRobot's stack on cloud NVIDIA GPUs.</p>
             <div class="exp-media landscape">
                 <video src="./media/lerobot/socks.mp4" autoplay muted loop playsinline></video>
@@ -316,6 +345,7 @@
             <p class="exp-meta">Research &amp; projects</p>
             <ul class="exp-projects">
                 <li>Led development of <a href="https://craft-hand.github.io/">CRAFT</a> — a low-cost, open-source tendon-driven dexterous hand with hybrid hard-soft compliance. Accepted to <a href="https://arxiv.org/abs/2603.12120">RSS 2026</a>.</li>
+                <li>Co-author on <strong>PolyFusion</strong> — collision-free robot learning with Bernstein polynomials. Accepted to <strong>CoRL 2026</strong>.</li>
                 <li>1st place at the NVIDIA × Hugging Face hackathon with a matcha-making robot (fine-tuned GR00T-N1.5; Jetson Thor prize).</li>
                 <li>NSF REU / UIUC research: Sawyer bottle handover with MoveIt, LEAP-hand teleoperation and tactile sensing, and a silent audio-dataset turret.</li>
             </ul>
